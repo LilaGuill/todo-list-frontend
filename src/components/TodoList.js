@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const TodoList = ({ todos, setTodos }) => {
   const todoList = todos.map((todo, index) => {
@@ -11,6 +11,15 @@ const TodoList = ({ todos, setTodos }) => {
       isChecked ? (copyTodo[index][1] = false) : (copyTodo[index][1] = true);
       //mise a jour du state
       setTodos(copyTodo);
+
+      //la task est retirée du tableau
+      const orderTodo = [...todos];
+      const removed = orderTodo.splice(index, 1);
+      //la task est ajoutée à la fin du tableau
+      orderTodo.push(removed[0]);
+
+      //mise a jour du state
+      setTodos(orderTodo);
     };
 
     const remove = () => {
@@ -21,7 +30,7 @@ const TodoList = ({ todos, setTodos }) => {
 
     return (
       <div className="list" key={index}>
-        <input type="checkbox" onChange={handleChange} />
+        <input type="checkbox" onChange={handleChange} checked={isChecked} />
         <div className={isChecked ? "list-item crossed" : "list-item"}>
           {task}
         </div>

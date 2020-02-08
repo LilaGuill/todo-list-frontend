@@ -11,6 +11,7 @@ const NewTask = ({ todos, setTodos, newTask, setNewTask }) => {
 
   const handleSubmit = event => {
     event.preventDefault(); //empêche le comportement par default
+
     const copyTodos = [...todos]; //Copie le contennu de todos dans un nouveau tableau
     copyTodos.push([newTask, false]); //ajoute au tableau la nouvelle tâche
     setTodos(copyTodos); //mise à jour de l'état
@@ -26,7 +27,7 @@ const NewTask = ({ todos, setTodos, newTask, setNewTask }) => {
           value={newTask}
           onChange={handleChange}
           placeholder="New task"
-        ></input>
+        />
         <button type="submit" className={colorButton}>
           Add task
         </button>
