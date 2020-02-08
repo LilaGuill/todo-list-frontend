@@ -13,13 +13,15 @@ function App() {
   return (
     <div>
       <Header />
-      <TodoList todos={todos} />
-      <NewTask
-        todos={todos}
-        setTodos={setTodos}
-        newTask={newTask}
-        setNewTask={setNewTask}
-      />
+      <div className="container">
+        <TodoList todos={todos} />
+        <NewTask
+          todos={todos}
+          setTodos={setTodos}
+          newTask={newTask}
+          setNewTask={setNewTask}
+        />
+      </div>
       <Footer />
     </div>
   );

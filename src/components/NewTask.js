@@ -13,7 +13,7 @@ const NewTask = ({ todos, setTodos, newTask, setNewTask }) => {
   };
 
   return (
-    <div>
+    <div className="wrapper">
       <form onSubmit={handleSubmit}>
         <input type="text" value={newTask} onChange={handleChange}></input>
         <button type="submit">Add task</button>
