@@ -8,13 +8,13 @@ import "./App.css";
 
 function App() {
   const [todos, setTodos] = useState([]);
-  const [newTask, setNewTask] = useState([""]);
+  const [newTask, setNewTask] = useState("");
 
   return (
     <div>
       <Header />
       <div className="container">
-        <TodoList todos={todos} />
+        <TodoList todos={todos} setTodos={setTodos} />
         <NewTask
           todos={todos}
           setTodos={setTodos}

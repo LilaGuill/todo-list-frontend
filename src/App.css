@@ -30,12 +30,39 @@ body {
   margin-left: 20px;
 }
 .container {
-  width: 100%;
+  width: 80%;
   min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
+}
+
+/* List */
+.wrapper-list {
+  margin: 0 auto;
+  width: 570px;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.list {
+  width: 440px;
+  line-height: 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
   align-items: center;
+}
+
+.list-item {
+  flex: 1;
+  margin-left: 10px;
+}
+.crossed {
+  text-decoration-line: line-through;
 }
 
 /* NewTask */
@@ -52,7 +79,9 @@ form input {
   border: 1px solid #5c48d3;
   box-sizing: border-box;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 18px;
+  padding-left: 10px;
+  box-sizing: border-box;
 }
 
 form button {
@@ -63,5 +92,24 @@ form button {
   border-radius: 10px;
   font-size: 16px;
   border: 1px solid #5c48d3;
+}
+.btn-is-active {
   color: #5c48d3;
+  background-color: white;
+}
+.btn-is-inactive {
+  background-color: #5c48d3;
+  color: white;
+}
+
+/* footer */
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
