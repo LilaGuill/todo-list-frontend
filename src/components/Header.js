@@ -2,9 +2,9 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div>
-      <div>Icon</div>
-      <h1>Titre</h1>
+    <div className="header">
+      <i className="fas fa-list-alt icon purple"></i>
+      <h1>Todo List</h1>
     </div>
   );
 };
