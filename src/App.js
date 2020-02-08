@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import TodoList from "./components/TodoList";
-import Search from "./components/Search";
+import NewTask from "./components/NewTask";
 import Footer from "./components/Footer";
 import "./App.css";
 
