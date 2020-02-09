@@ -1,10 +1,19 @@
 import React from "react";
-let url = "https://react-todo-list-api.herokuapp.com/";
+import Axios from "axios";
+let url = "https://react-todo-list-api.herokuapp.com/create";
 
-const Save = () => {
+const Save = todos => {
+  const saveTodos = async () => {
+    const data = { task: todos.todos };
+    const res = await Axios.post(url, { data });
+    console.log(res);
+  };
+
   return (
     <div className="wrapper-btn">
-      <button className="btn-save"> Save</button>
+      <button onClick={saveTodos} className="btn-save">
+        Save
+      </button>
     </div>
   );
 };

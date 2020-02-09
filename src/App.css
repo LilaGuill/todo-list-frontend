@@ -29,10 +29,11 @@ body {
   line-height: 59px;
   margin-left: 20px;
 }
-.header i {
+.header > i {
   margin: 0 10px 0 10px;
   color: #5c48d3;
   font-size: 30px;
+  cursor: pointer;
 }
 .header i:last-child {
   margin-right: 20px;
@@ -107,6 +108,7 @@ form button {
   border-radius: 10px;
   font-size: 16px;
   border: 1px solid #5c48d3;
+  cursor: pointer;
 }
 
 .btn-is-active {
@@ -130,6 +132,7 @@ form button {
   border-radius: 10px;
   font-size: 16px;
   border: 1px solid #5c48d3;
+  cursor: pointer;
 }
 
 /* footer */

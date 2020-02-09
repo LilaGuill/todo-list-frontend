@@ -33,7 +33,7 @@ function App() {
           search={search}
           setSearch={setSearch}
         />
-        <Save />
+        <Save todos={todos} />
       </div>
       <Footer />
     </div>
