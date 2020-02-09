@@ -13,7 +13,6 @@ const TodoList = ({ todos, setTodos, toggle, search }) => {
       //la task est ajoutée à la fin du tableau
       copyTodo.push(removed[0]);
     }
-
     setTodos(copyTodo);
   };
 
