@@ -4,9 +4,8 @@ let url = "https://react-todo-list-api.herokuapp.com/create";
 
 const Save = todos => {
   const saveTodos = async () => {
-    console.log(todos);
     const res = await Axios.post(url, todos.todos);
-    console.log(res);
+    console.log(res.status);
   };
 
   return (
