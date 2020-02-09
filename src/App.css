@@ -22,11 +22,20 @@ body {
   font-size: 40px;
   line-height: 50px;
   margin-left: 20px;
+  flex: 1;
 }
 .header .icon {
   font-size: 48px;
   line-height: 59px;
   margin-left: 20px;
+}
+.header i {
+  margin: 0 10px 0 10px;
+  color: #5c48d3;
+  font-size: 30px;
+}
+.header i:last-child {
+  margin-right: 20px;
 }
 .container {
   width: 80%;
@@ -71,7 +80,11 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 300px;
+  min-height: 200px;
+}
+form {
+  display: flex;
+  align-items: center;
 }
 
 form input {
@@ -95,6 +108,7 @@ form button {
   font-size: 16px;
   border: 1px solid #5c48d3;
 }
+
 .btn-is-active {
   color: #5c48d3;
   background-color: white;
