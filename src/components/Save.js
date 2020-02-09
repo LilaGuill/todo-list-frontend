@@ -1,7 +1,6 @@
 import React from "react";
 import Axios from "axios";
-// let url = "https://react-todo-list-api.herokuapp.com/create";
-let url = "http://localhost:3000/create";
+let url = "https://react-todo-list-api.herokuapp.com/create";
 
 const Save = todos => {
   const todosArr = todos.todos;
