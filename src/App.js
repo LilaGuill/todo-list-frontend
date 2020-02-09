@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
 import TodoList from "./components/TodoList";
-import SearchList from "./components/SearchList";
 import Input from "./components/Input";
+import Save from "./components/Save";
 import Footer from "./components/Footer";
 import "./App.css";
 
@@ -16,22 +16,13 @@ function App() {
     <div>
       <Header setToggle={setToggle} />
       <div className="container">
-        {toggle === "addTask" ? (
-          <TodoList
-            todos={todos}
-            setTodos={setTodos}
-            toggle={toggle}
-            search={search}
-            setSearch={setSearch}
-          />
-        ) : (
-          <SearchList
-            search={search}
-            setSearch={setSearch}
-            todos={todos}
-            setTodos={setTodos}
-          />
-        )}
+        <TodoList
+          todos={todos}
+          setTodos={setTodos}
+          toggle={toggle}
+          search={search}
+          setSearch={setSearch}
+        />
 
         <Input
           toggle={toggle}
@@ -42,6 +33,7 @@ function App() {
           search={search}
           setSearch={setSearch}
         />
+        <Save />
       </div>
       <Footer />
     </div>

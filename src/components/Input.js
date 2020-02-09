@@ -26,7 +26,7 @@ const Input = ({
 
     if (toggle === "addTask") {
       const copyTodos = [...todos]; //Copie le contennu de todos dans un nouveau tableau
-      copyTodos.push([newTask, false]); //ajoute au tableau la nouvelle tâche
+      copyTodos.push({ task: newTask, isChecked: false }); //ajoute au tableau la nouvelle tâche
       setTodos(copyTodos); //mise à jour de l'état
       setColorButton("btn-is-inactive"); //change la couleur du button
       setNewTask(""); // l'input n'a plus de value

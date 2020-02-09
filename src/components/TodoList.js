@@ -1,39 +1,56 @@
 import React from "react";
 
-const TodoList = ({ todos, setTodos }) => {
-  const todoList = todos.map((todo, index) => {
-    let task = todo[0];
-    let isChecked = todo[1];
+const TodoList = ({ todos, setTodos, toggle, search }) => {
+  const handleChange = (index, isChecked) => {
+    const copyTodo = [...todos]; //copie dans un nouveau tableau
+    isChecked
+      ? (copyTodo[index].isChecked = false)
+      : (copyTodo[index].isChecked = true); //si la task est faite elle est barrée
 
-    const handleChange = () => {
-      const copyTodo = [...todos]; //copie dans un nouveau tableau
-      isChecked ? (copyTodo[index][1] = false) : (copyTodo[index][1] = true); //si la task est faite elle est barrée
-      setTodos(copyTodo); //mise a jour du state
-
+    if (copyTodo[index].isChecked === true) {
       //la task est retirée du tableau
-      const orderTodo = [...todos];
-      const removed = orderTodo.splice(index, 1);
+      const removed = copyTodo.splice(index, 1);
       //la task est ajoutée à la fin du tableau
-      orderTodo.push(removed[0]);
-      //mise a jour du state
-      setTodos(orderTodo);
-    };
+      copyTodo.push(removed[0]);
+    }
 
-    const remove = () => {
-      const copyTodo = [...todos];
-      copyTodo.splice(index, 1);
-      setTodos(copyTodo);
-    };
+    setTodos(copyTodo);
+  };
 
-    return (
-      <div className="list" key={index}>
-        <input type="checkbox" onChange={handleChange} checked={isChecked} />
-        <div className={isChecked ? "list-item crossed" : "list-item"}>
-          {task}
+  const remove = index => {
+    const copyTodo = [...todos];
+    copyTodo.splice(index, 1);
+    setTodos(copyTodo);
+  };
+
+  const todoList = todos.map((todo, index) => {
+    const { task, isChecked } = todo;
+    if (
+      (toggle === "searchTask" && task.indexOf(search) >= 0) ||
+      toggle === "addTask"
+    ) {
+      return (
+        <div className="list" key={index}>
+          <input
+            type="checkbox"
+            onChange={() => {
+              handleChange(index, isChecked);
+            }}
+            checked={isChecked}
+          />
+          <div className={isChecked ? "list-item crossed" : "list-item"}>
+            {task}
+          </div>
+          <i
+            onClick={() => {
+              remove(index);
+            }}
+            className="fas fa-trash"
+          ></i>
         </div>
-        <i onClick={remove} className="fas fa-trash"></i>
-      </div>
-    );
+      );
+    }
+    return null;
   });
 
   return <div className="wrapper-list">{todoList}</div>;
