@@ -1,11 +1,20 @@
 import React from "react";
 import Axios from "axios";
-let url = "https://react-todo-list-api.herokuapp.com/create";
+// let url = "https://react-todo-list-api.herokuapp.com/create";
+let url = "http://localhost:3000/create";
 
 const Save = todos => {
+  const todosArr = todos.todos;
+
   const saveTodos = async () => {
-    const res = await Axios.post(url, todos.todos);
-    console.log(res.status);
+    for (let i = 0; i < todosArr.length; i++) {
+      const data = {
+        task: todosArr[i].task,
+        isChecked: todosArr[i].isChecked
+      };
+      const res = await Axios.post(url, data);
+      console.log(res.status);
+    }
   };
 
   return (
