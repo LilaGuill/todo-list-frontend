@@ -1,11 +1,9 @@
 import React from "react";
 
 const TodoList = ({ todos, setTodos, toggle, search }) => {
-  const handleChange = (index, isChecked) => {
+  const handleChange = index => {
     const copyTodo = [...todos]; //copie dans un nouveau tableau
-    isChecked
-      ? (copyTodo[index].isChecked = false)
-      : (copyTodo[index].isChecked = true); //si la task est faite elle est barrée
+    copyTodo[index].isChecked = !copyTodo[index].isChecked;
 
     if (copyTodo[index].isChecked === true) {
       //la task est retirée du tableau
