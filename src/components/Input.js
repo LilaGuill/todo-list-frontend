@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 const Input = ({
   toggle,
@@ -21,13 +22,18 @@ const Input = ({
     }
   };
 
-  const handleSubmit = event => {
+  const handleSubmit = async event => {
     event.preventDefault(); //empêche le comportement par default
 
     if (toggle === "addTask") {
-      const copyTodos = [...todos]; //Copie le contennu de todos dans un nouveau tableau
-      copyTodos.push({ task: newTask, isChecked: false }); //ajoute au tableau la nouvelle tâche
-      setTodos(copyTodos); //mise à jour de l'état
+      const response = await axios.post("http://localhost:3000/create", {
+        task: newTask
+      });
+      console.log(response.data);
+
+      // const copyTodos = [...todos]; //Copie le contennu de todos dans un nouveau tableau
+      // copyTodos.push({ task: newTask, isChecked: false }); //ajoute au tableau la nouvelle tâche
+      // setTodos(copyTodos); //mise à jour de l'état
       setColorButton("btn-is-inactive"); //change la couleur du button
       setNewTask(""); // l'input n'a plus de value
     }

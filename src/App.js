@@ -1,16 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import TodoList from "./components/TodoList";
 import Input from "./components/Input";
 import Save from "./components/Save";
 import Footer from "./components/Footer";
 import "./App.css";
+import axios from "axios";
+// let url = "https://react-todo-list-api.herokuapp.com";
+let url = "http://localhost:3000";
 
 function App() {
   const [todos, setTodos] = useState([]);
   const [newTask, setNewTask] = useState("");
   const [toggle, setToggle] = useState("addTask");
   const [search, setSearch] = useState("");
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(url);
+        console.log(response.data);
+        setTodos(response.data);
+      } catch (error) {
+        console.log(error.message);
+      }
+    };
+
+    fetchData();
+  }, [newTask]);
 
   return (
     <div>

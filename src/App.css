@@ -189,3 +189,7 @@ form button {
     font-size: 12px;
   }
 }
+
+input {
+  outline: none;
+}
