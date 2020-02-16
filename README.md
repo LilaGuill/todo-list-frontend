@@ -6,8 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Screenshoots
 
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+<p align="center">
+  <img width="460" height="300" src="/image/logo.png">
+</p>
 
 ## Installation and usage
 
