@@ -11,7 +11,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - Create task : saved in mongoDB database.
 - Read : get task from MongoDB
-- Update task : update the status of isChecked to false or true
+- Update task : update the status isChecked of the task to false or true
 - Remove task, the task is delete of the database
 - Search task
 
