@@ -8,15 +8,22 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Overview
 
-**One single Page, architecture CRUD:**
+**Single page application, architecture CRUD:**
 
-- Create task : saved in mongoDB database.
+\*Functionalities
+
+- Create task : save task in mongoDB database.
 - Read : get task from MongoDB
 - Update task : update the status isChecked of the task to false or true
-- Remove task : the task is delete of the database
+- Remove task : delete task from database
 - Search task
 
-## Screenshoots
+\*UI
+
+- Homemade UI without framework
+- Responsive design
+
+## Screenshots
 
 <p>
   <img width="400"  src="https://github.com/LilaGuill/react-todo-list/blob/master/public/screen1.png" alt="capture-1">
@@ -47,9 +54,8 @@ npm start
 
 ## Client
 
-- axios to fecth data
-- useState
-- useffect
+- HTTP request with axios (Get, Post)
+- Hooks (useState, useEffect)
 
 ## Server
 
@@ -57,12 +63,17 @@ npm start
 - express-formidable
 - mongoose
 
+  <a href="https://github.com/LilaGuill/react-todo-list-api" target="_blank">
+  React Todo List API :https://github.com/LilaGuill/react-todo-list-api
+
+  </a>
+
 ## Deployment
 
-- server deploy on Heroku
-- database MongoDb deploy on Mlab
-- client deploy with Netlify
+- Client deployed with Netlify
+- Server deployed with Heroku
+- MongoDb database hosted on Mlab
 
 ## Contact
 
-<a href="https://www.linkedin.com/in/lila-guillermic-66542476/" target="_blank">Contact me here</a>
+<a href="https://www.linkedin.com/in/lila-guillermic-66542476/" target="_blank">My Linkedin Profil</a>
