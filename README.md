@@ -63,9 +63,8 @@ npm start
 - express-formidable
 - mongoose
 
-  <a href="https://github.com/LilaGuill/react-todo-list-api" target="_blank">
-  React Todo List API :https://github.com/LilaGuill/react-todo-list-api
-
+  React Todo List API : <a href="https://github.com/LilaGuill/react-todo-list-api" target="_blank">
+  https://github.com/LilaGuill/react-todo-list-api
   </a>
 
 ## Deployment
