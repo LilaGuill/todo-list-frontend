@@ -1,7 +1,14 @@
 import React from "react";
+import axios from "axios";
+// let url = "https://react-todo-list-api.herokuapp.com/remove";
+let url = "http://localhost:3000/remove";
 
 const TodoList = ({ todos, setTodos, toggle, search }) => {
-  const handleChange = index => {
+  const handleChange = async (index, id) => {
+    await axios.post("http://localhost:3000/update", {
+      id: id
+    });
+
     const copyTodo = [...todos]; //copie dans un nouveau tableau
     copyTodo[index].isChecked = !copyTodo[index].isChecked;
 
@@ -14,7 +21,9 @@ const TodoList = ({ todos, setTodos, toggle, search }) => {
     setTodos(copyTodo);
   };
 
-  const remove = index => {
+  const remove = async (id, index) => {
+    await axios.post(url, { id: id });
+
     const copyTodo = [...todos];
     copyTodo.splice(index, 1);
     setTodos(copyTodo);
@@ -22,6 +31,7 @@ const TodoList = ({ todos, setTodos, toggle, search }) => {
 
   const todoList = todos.map((todo, index) => {
     const { task, isChecked } = todo;
+
     if (
       (toggle === "searchTask" && task.indexOf(search) >= 0) ||
       toggle === "addTask"
@@ -31,7 +41,7 @@ const TodoList = ({ todos, setTodos, toggle, search }) => {
           <input
             type="checkbox"
             onChange={() => {
-              handleChange(index, isChecked);
+              handleChange(index, todo._id);
             }}
             checked={isChecked}
           />
@@ -40,7 +50,7 @@ const TodoList = ({ todos, setTodos, toggle, search }) => {
           </div>
           <i
             onClick={() => {
-              remove(index);
+              remove(todo._id, index);
             }}
             className="fas fa-trash"
           ></i>

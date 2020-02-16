@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import TodoList from "./components/TodoList";
 import Input from "./components/Input";
-import Save from "./components/Save";
 import Footer from "./components/Footer";
 import "./App.css";
 import axios from "axios";
@@ -11,6 +10,7 @@ let url = "http://localhost:3000";
 
 function App() {
   const [todos, setTodos] = useState([]);
+  const [isLaoding, setIsLoading] = useState(true);
   const [newTask, setNewTask] = useState("");
   const [toggle, setToggle] = useState("addTask");
   const [search, setSearch] = useState("");
@@ -19,11 +19,10 @@ function App() {
     const fetchData = async () => {
       try {
         const response = await axios.get(url);
-        console.log(response.data);
+
         setTodos(response.data);
-      } catch (error) {
-        console.log(error.message);
-      }
+        setIsLoading(false);
+      } catch (error) {}
     };
 
     fetchData();
@@ -32,26 +31,30 @@ function App() {
   return (
     <div>
       <Header setToggle={setToggle} />
-      <div className="container">
-        <TodoList
-          todos={todos}
-          setTodos={setTodos}
-          toggle={toggle}
-          search={search}
-          setSearch={setSearch}
-        />
+      {isLaoding ? (
+        <p>Loading</p>
+      ) : (
+        <div className="container">
+          <TodoList
+            todos={todos}
+            setTodos={setTodos}
+            toggle={toggle}
+            search={search}
+            setSearch={setSearch}
+          />
 
-        <Input
-          toggle={toggle}
-          todos={todos}
-          setTodos={setTodos}
-          newTask={newTask}
-          setNewTask={setNewTask}
-          search={search}
-          setSearch={setSearch}
-        />
-        <Save todos={todos} />
-      </div>
+          <Input
+            toggle={toggle}
+            todos={todos}
+            setTodos={setTodos}
+            newTask={newTask}
+            setNewTask={setNewTask}
+            search={search}
+            setSearch={setSearch}
+          />
+        </div>
+      )}
+
       <Footer />
     </div>
   );
