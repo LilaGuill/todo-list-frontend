@@ -1,7 +1,7 @@
 <p align="center">
 <h1>Todo List ReactJS</h1>
   <img width="200" height="50" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/logo.png">
-  <a href="https://todolist-react-lg.netlify.com/">www.todolist-react.netlify.com</a>
+  <a href="https://todolist-react-lg.netlify.com/" target="_blank">www.todolist-react.netlify.com</a>
 </p>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -65,4 +65,4 @@ npm start
 
 ## Contact
 
-<a href="https://www.linkedin.com/in/lila-guillermic-66542476/">Contact me here</a>
+<a href="https://www.linkedin.com/in/lila-guillermic-66542476/" target="_blank">Contact me here</a>
