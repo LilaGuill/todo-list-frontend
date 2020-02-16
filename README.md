@@ -1,6 +1,6 @@
 <p align="center">
-<h1></h1>
-  <img width="300" height="100" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/logo.png">
+<h1>Todo List ReactJS</h1>
+  <img width="150" height="50" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/logo.png">
 </p>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -18,9 +18,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Screenshoots
 
 <p>
-  <img width="300"  src="https://github.com/LilaGuill/react-todo-list/blob/master/public/screen1.png" alt="capture-1">
+  <img width="400"  src="https://github.com/LilaGuill/react-todo-list/blob/master/public/screen1.png" alt="capture-1">
 
-  <img width="300" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/screen2.png">
+  <img width="400" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/screen2.png">
   <p>
 
 ## Running the project
