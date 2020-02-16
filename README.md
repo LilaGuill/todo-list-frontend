@@ -63,7 +63,7 @@ npm start
 - express-formidable
 - mongoose
 
-# React Todo List API :
+## React Todo List API
 
 <a href="https://github.com/LilaGuill/react-todo-list-api">https://github.com/LilaGuill/react-todo-list-api</a>
 
