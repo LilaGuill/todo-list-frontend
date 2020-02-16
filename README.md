@@ -1,19 +1,20 @@
 <p align="center">
 <h1>Todo List ReactJS</h1>
-  <img width="150" height="50" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/logo.png">
+  <img width="200" height="50" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/logo.png">
 </p>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Overview
 
-**One single Page** in CRUD architecture, Web app responsive
+**One single Page**
+Architecture CRUD:
 
-- create task into mongoDB : the task is saved on MongoDB, State are updated after saving
-  so the TaskList is render instantly
-- read task from MongoDB
-- update task : the task can't be mark as done, in this case it's crossed and it's passa at the bottom of the list
-- and remove task
+- Create task : saved in mongoDB database.
+- Read : get task from MongoDB
+- Update task : update the status of isChecked to false or true
+- Remove task, the task is delete of the database
+- Search task
 
 ## Screenshoots
 
@@ -46,21 +47,21 @@ npm start
 
 ## Client
 
-- use axios to fecth data
+- axios to fecth data
 - useState
 - useffect
 
 ## Server
 
-- Express
-- Express-formidable
+- express
+- express-formidable
 - mongoose
 
 ## Deployment
 
-- Server deploy on Heroku
-- Database MongoDb deploy on Mlab
-- Client deploy with Netlify
+- server deploy on Heroku
+- database MongoDb deploy on Mlab
+- client deploy with Netlify
 
 ## Contact
 
