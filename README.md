@@ -7,8 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Overview
 
-**One single Page**
-Architecture CRUD:
+**One single Page, architecture CRUD:**
 
 - Create task : saved in mongoDB database.
 - Read : get task from MongoDB
