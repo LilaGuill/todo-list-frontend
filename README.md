@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Screenshoots
 
 <p align="center">
-  <img width="460" height="300" src="/image/logo.png">
+  <img width="460" height="300" src="/images/logo.png">
 </p>
 
 ## Installation and usage
