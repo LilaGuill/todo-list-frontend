@@ -6,16 +6,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Screenshoots
 
-### Installation and usage
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
 
-### Running the projetc
+## Installation and usage
 
-### Dependencies
+## Running the project
+
+## Dependencies
 
 ## Client
 
 ## Back
 
-### Deployment
+## Deployment
 
 ## Contact
