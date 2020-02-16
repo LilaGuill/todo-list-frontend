@@ -10,7 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 **Single page application, architecture CRUD:**
 
-\*\*\*Functionalities
+**_Functionalities_**
 
 - Create task : save task in mongoDB database.
 - Read : get task from MongoDB
@@ -18,7 +18,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Remove task : delete task from database
 - Search task
 
-\*\*\*UI
+**_UI_**
 
 - Homemade UI without framework
 - Responsive design
