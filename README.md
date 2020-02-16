@@ -65,4 +65,4 @@ npm start
 
 ## Contact
 
-<a href="https://www.linkedin.com/in/lila-guillermic-66542476/">Contact here</a>
+<a href="https://www.linkedin.com/in/lila-guillermic-66542476/">Contact me here</a>
