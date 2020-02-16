@@ -59,9 +59,9 @@ npm start
 
 ## Server
 
-- express
-- express-formidable
-- mongoose
+- Express
+- Express-formidable
+- Mongoose
 
 ## React Todo List API
 
