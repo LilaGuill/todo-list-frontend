@@ -1,11 +1,9 @@
 import React from "react";
 import axios from "axios";
-// let url = "https://react-todo-list-api.herokuapp.com/remove";
-let url = "http://localhost:3000/remove";
 
 const TodoList = ({ todos, setTodos, toggle, search }) => {
   const handleChange = async (index, id) => {
-    await axios.post("http://localhost:3000/update", {
+    await axios.post("https://react-todo-list-api.herokuapp.com/update", {
       id: id
     });
 
@@ -22,7 +20,9 @@ const TodoList = ({ todos, setTodos, toggle, search }) => {
   };
 
   const remove = async (id, index) => {
-    await axios.post(url, { id: id });
+    await axios.post("https://react-todo-list-api.herokuapp.com/remove", {
+      id: id
+    });
 
     const copyTodo = [...todos];
     copyTodo.splice(index, 1);

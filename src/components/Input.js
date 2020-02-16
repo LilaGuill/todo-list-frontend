@@ -18,7 +18,7 @@ const Input = ({ toggle, newTask, setNewTask, search, setSearch }) => {
     event.preventDefault(); //empêche le comportement par default
 
     if (toggle === "addTask") {
-      await axios.post("http://localhost:3000/create", {
+      await axios.post("https://react-todo-list-api.herokuapp.com/create", {
         task: newTask,
         isChecked: false
       });

@@ -5,8 +5,6 @@ import Input from "./components/Input";
 import Footer from "./components/Footer";
 import "./App.css";
 import axios from "axios";
-// let url = "https://react-todo-list-api.herokuapp.com";
-let url = "http://localhost:3000";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -18,7 +16,9 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(url);
+        const response = await axios.get(
+          "https://react-todo-list-api.herokuapp.com"
+        );
 
         setTodos(response.data);
         setIsLoading(false);
@@ -32,7 +32,9 @@ function App() {
     <div>
       <Header setToggle={setToggle} />
       {isLaoding ? (
-        <p>Loading</p>
+        <div className="container">
+          <div className="loading ">Loading...</div>
+        </div>
       ) : (
         <div className="container">
           <TodoList

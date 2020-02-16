@@ -47,6 +47,11 @@ body {
   margin: 0 auto;
 }
 
+.loading {
+  margin: auto;
+  font-size: 20px;
+}
+
 /* List */
 .wrapper-list {
   margin: 0 auto;
