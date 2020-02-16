@@ -1,7 +1,7 @@
 # Todo-List React.JS
 
 <p align="center">
-  <img width="160" height="100" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/logo.png">
+  <img width="260" height="100" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/logo.png">
 </p>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -17,6 +17,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - and remove task
 
 ## Screenshoots
+
+  <img width="400" height="300" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/screen1.png">
+</p>
+  <img width="400" height="300" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/screen2.png">
+</p>
 
 ## Running the project
 
@@ -41,22 +46,22 @@ npm start
 
 ## Client
 
-use axios to fecth data
-UseState
-Useffect
+- use axios to fecth data
+- useState
+- useffect
 
 ## Server
 
-Express
-Express-formidable
-mongoose
+- Express
+- Express-formidable
+- mongoose
 
 ## Deployment
 
-*Server deploy on Heroku
-*Database MongoDb deploy on Mlab
-Client deploy with Netlify
+- Server deploy on Heroku
+- Database MongoDb deploy on Mlab
+- Client deploy with Netlify
 
 ## Contact
 
-<a href="https://www.linkedin.com/in/lila-guillermic-66542476/">Contact Linkedin ici</a>
+<a href="https://www.linkedin.com/in/lila-guillermic-66542476/">Contact here</a>
