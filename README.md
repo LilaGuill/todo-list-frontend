@@ -1,4 +1,4 @@
-<h1 align="center">Todo List ReactJS</h1>
+<h1 align="center">Todo List React</h1>
 
 <p align="center">
   <img width="500" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/screen1.png" alt="capture-1">
