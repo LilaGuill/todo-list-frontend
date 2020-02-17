@@ -8,10 +8,8 @@
   Demo:<a href="https://todolist-react-lg.netlify.com/" target="_blank"> https://todolist-react.netlify.com</a>
 </p>
 <p align="center">
- This project was bootstrapped with <a href=https://github.com/facebook/create-react-app. target="_blank"> https://github.com/facebook/create-react-app.</a>
+ This project was bootstrapped with <a href=https://github.com/facebook/create-react-app. target="_blank">Create React App</a>
 </p>
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Overview
 
