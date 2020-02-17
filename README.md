@@ -1,11 +1,14 @@
 <h1>Todo List ReactJS</h1>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 <p align="center">
- <img width="400"  src="https://github.com/LilaGuill/ react-todo-list/blob/master/public/screen1" alt="capture-1">
-  <a href="https://todolist-react-lg.netlify.com/" target="_blank">Demo : https://todolist-react-lg.netlify.com/</a>
+  <img width="400" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/screen1.png" alt="capture-1">
 </p>
 
+<p align="center">
+  <a href="https://todolist-react-lg.netlify.com/" target="_blank">Demo: https://todolist-react.netlify.com</a>
+</p>
 ## Overview
 
 **Single page application, architecture CRUD:**
