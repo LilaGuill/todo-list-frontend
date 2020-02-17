@@ -1,17 +1,21 @@
-<h1>Todo List ReactJS</h1>
+<h1 align="center">Todo List ReactJS</h1>
+
+<p align="center">
+  <img width="500" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/screen1.png" alt="capture-1">
+</p>
+
+<p align="center">
+  Demo:<a href="https://todolist-react-lg.netlify.com/" target="_blank"> https://todolist-react.netlify.com</a>
+</p>
+<p align="center">
+ This project was bootstrapped with <a href=https://github.com/facebook/create-react-app. target="_blank"> https://github.com/facebook/create-react-app.</a>
+</p>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<p align="center">
-  <img width="400" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/screen1.png" alt="capture-1">
-</p>
-
-<p align="center">
-  <a href="https://todolist-react-lg.netlify.com/" target="_blank">Demo: https://todolist-react.netlify.com</a>
-</p>
 ## Overview
 
-**Single page application, architecture CRUD:**
+**Single page application, architecture CRUD**
 
 **Functionalities**
 
@@ -25,8 +29,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - Homemade UI without framework
 - Responsive design
-
-## Screenshots
 
 ## Running the project
 
