@@ -24,7 +24,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Screenshots
 
-<img src="https://giphy.com/embed/h5oi52E51pedNqrz4s/html5" width="480" height="231" frameBorder="0" class="giphy-embed" allowFullScreen></img><p><a href="https://giphy.com/gifs/h5oi52E51pedNqrz4s">via GIPHY</a></p>
+<p>
+  <img width="400"  src="https://github.com/LilaGuill/react-todo-list/blob/master/public/screen.gif" alt="capture-1">
+
+<p>
 
 ## Running the project
 
