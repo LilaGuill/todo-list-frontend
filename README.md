@@ -24,9 +24,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Screenshots
 
-<p>
- <img src="https://giphy.com/embed/h5oi52E51pedNqrz4s" width="480" height="231" frameBorder="0" class="giphy-embed" allowFullScreen></img><p><a href="https://giphy.com/gifs/h5oi52E51pedNqrz4s">via GIPHY</a></p>
-  <p>
+<img src="https://giphy.com/embed/h5oi52E51pedNqrz4s/html5" width="480" height="231" frameBorder="0" class="giphy-embed" allowFullScreen></img><p><a href="https://giphy.com/gifs/h5oi52E51pedNqrz4s">via GIPHY</a></p>
 
 ## Running the project
 
