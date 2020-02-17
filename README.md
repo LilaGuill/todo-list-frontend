@@ -1,6 +1,5 @@
 <p align="center">
 <h1>Todo List ReactJS</h1>
-  <img width="200" height="50" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/logo.png">
   <a href="https://todolist-react-lg.netlify.com/" target="_blank">www.todolist-react.netlify.com</a>
 </p>
 
@@ -26,9 +25,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Screenshots
 
 <p>
-  <img width="400"  src="https://github.com/LilaGuill/react-todo-list/blob/master/public/screen1.png" alt="capture-1">
-
-  <img width="400" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/screen2.png">
+ <iframe src="https://giphy.com/embed/h5oi52E51pedNqrz4s" width="480" height="231" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/h5oi52E51pedNqrz4s">via GIPHY</a></p>
   <p>
 
 ## Running the project
