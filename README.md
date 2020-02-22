@@ -34,7 +34,7 @@ Clone this repository :
 
 ```
 git clone https://github.com/LilaGuill/todo-list-frontend.git
-cd react-todo-list
+cd todo-list-frontend
 ```
 
 Install packages :
@@ -62,7 +62,7 @@ npm start
 
 ## Todo List backend
 
-<a href="https://github.com/LilaGuill/todo-list-backend">https://github.com/LilaGuill/todo-list-backend</a>
+<a href="https://github.com/LilaGuill/todo-list-backend.git">https://github.com/LilaGuill/todo-list-backend.git</a>
 
 ## Deployment
 
