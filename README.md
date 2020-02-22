@@ -1,11 +1,11 @@
-<h1 align="center">Todo List React</h1>
+<h1 align="center">Todo List frontend</h1>
 
 <p align="center">
   <img width="500" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/screen1.png" alt="capture-1">
 </p>
 
 <p align="center">
-  Demo:<a href="https://todolist-react-lg.netlify.com/" target="_blank"> https://todolist-react.netlify.com</a>
+  Demo:<a href="https://todolist-react-lg.netlify.com/" target="_blank"> https://todolist-react-lg.netlify.com/</a>
 </p>
 <p align="center">
  This project was bootstrapped with <a href=https://github.com/facebook/create-react-app. target="_blank">Create React App</a>
@@ -33,7 +33,7 @@
 Clone this repository :
 
 ```
-git clone https://github.com/LilaGuill/react-todo-list.git
+git clone https://github.com/LilaGuill/todo-list-frontend.git
 cd react-todo-list
 ```
 
@@ -60,9 +60,9 @@ npm start
 - Express-formidable
 - Mongoose
 
-## React Todo List API
+## Todo List backend
 
-<a href="https://github.com/LilaGuill/react-todo-list-api">https://github.com/LilaGuill/react-todo-list-api</a>
+<a href="https://github.com/LilaGuill/todo-list-backend">https://github.com/LilaGuill/todo-list-backend</a>
 
 ## Deployment
 
