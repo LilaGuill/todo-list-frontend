@@ -1,7 +1,7 @@
 <h1 align="center">Todo List frontend</h1>
 
 <p align="center">
-  <img width="500" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/screen1.png" alt="capture-1">
+  <img width="500" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/Kapture.gif" alt="capture-1">
 </p>
 
 <p align="center">
